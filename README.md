@@ -51,7 +51,7 @@
 - **AOV 정체는 고객/상품 구성의 문제가 아님** — 세그먼트 및 상품 카테고리별 AOV 차이 미미
 - **고율 할인(3%+) 구간에 저가 상품 집중** — 프로모션 구조가 AOV 상승을 제한할 가능성
 - **HOMEPAGE → ITEM_DETAIL 미진입률 41%** — ITEM_DETAIL 진입 세션에서 AOV는 3%, CVR은 2% 더 높게 나타나 상세페이지 진입 개선 여지를 확인
-![도달률 분석](images/funnel_reach.png)
+![도달률 분석](images/event_reach.png)
 > HOMEPAGE → ITEM_DETAIL 미진입 41%
 
 ---
