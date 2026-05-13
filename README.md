@@ -50,7 +50,8 @@
 
 - **AOV 정체는 고객/상품 구성의 문제가 아님** — 세그먼트 및 상품 카테고리별 AOV 차이 미미
 - **고율 할인(3%+) 구간에 저가 상품 집중** — 프로모션 구조가 AOV 상승을 제한할 가능성
-- **HOMEPAGE → ITEM_DETAIL 미진입률 41%** — ITEM_DETAIL 진입 세션에서 AOV는 3%, CVR은 2% 더 높게 나타나 상세페이지 진입 개선 여지를 확인
+- **HOMEPAGE → ITEM_DETAIL 미진입률 41%** — 상세페이지 진입 구간 개선 여지 확인  
+                                          ITEM_DETAIL 진입 세션에서 AOV는 3%, CVR은 2%p 더 높게 나타남
 ![도달률 분석](images/event_reach.png)
 > HOMEPAGE → ITEM_DETAIL 미진입 41%
 
@@ -95,6 +96,6 @@
 
 분석 결과를 시각화한 Tableau 대시보드를 아래 링크에서 확인할 수 있습니다.
 
-🔗 <a href="https://public.tableau.com/views/ecommerce-aov-analysis-dashboard/1?:language=ko-KR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">Tableau Public 바로가기</a>
+🔗 [Tableau Public 바로가기](https://public.tableau.com/views/ecommerce-aov-analysis-dashboard/1?:language=ko-KR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 **구성** : 비즈니스 현황 / 가설 검증 / 세그먼트 분석 / 퍼널 분석 / KPI 모니터링
