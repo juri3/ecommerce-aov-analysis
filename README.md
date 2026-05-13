@@ -95,6 +95,6 @@
 
 분석 결과를 시각화한 Tableau 대시보드를 아래 링크에서 확인할 수 있습니다.
 
-🔗 [Tableau Public 바로가기](https://public.tableau.com/views/ecommerce-aov-analysis-dashboard/1?:language=ko-KR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
+🔗 <a href="https://public.tableau.com/views/ecommerce-aov-analysis-dashboard/1?:language=ko-KR&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" target="_blank">Tableau Public 바로가기</a>
 
 **구성** : 비즈니스 현황 / 가설 검증 / 세그먼트 분석 / 퍼널 분석 / KPI 모니터링
