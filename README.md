@@ -19,26 +19,40 @@
 
 ## 분석 구조
 
-```
-1. 비즈니스 문제 정의     매출 성장이 거래건수 증가에만 의존, AOV 정체 확인
-2. 가설 검증             3가지 가설 구조화 및 검증
-   A. 신규고객 증가 → 기각 (신규고객 비율 오히려 감소)
-   B. 프로모션 구조 문제 → 부분 채택 (고율 할인 구간에 저가 상품 집중)
-   C. 고가 세그먼트 이탈 → 기각 (고가 구매 비율 25%로 일정)
-3. 세그먼트 분석         연령대 × 성별 × 카테고리 교차 분석
-4. 퍼널 분석             이벤트 도달률 분석 (순차 퍼널 한계 검토 포함)
-5. 전략 제안             단기/중기/장기 실행 우선순위 기반 전략
-6. A/B 테스트 설계       전략별 검증 실험 설계
-7. KPI                  분석 연계 성과 측정 기준
-```
+1. **비즈니스 문제 정의**  
+   거래건수 증가 대비 AOV 정체 현상 확인
+  ![월별 추이](images/monthly_trend.png)
+  > 거래건수는 성장, AOV는 정체
+
+2. **가설 검증**  
+   - **신규고객 증가** → 기각 : 신규고객 비율 오히려 감소
+   - **프로모션 구조 문제** → 부분 채택 : 고율 할인 구간에 저가 상품 집중
+   - **고가 구매층 이탈** → 기각 : 고가 구매 비율 약 25%로 일정 
+
+3. **세그먼트 분석**  
+   연령대 × 성별 × 상품 카테고리 기준으로 AOV 정체 원인 검토
+
+4. **상품 탐색 이벤트 도달률 분석**  
+   순차 퍼널 한계를 검토한 뒤, 세션 내 이벤트 포함 여부 기준으로 도달률 분석
+
+5. **전략 제안**  
+   단기 / 중기 / 장기 실행 우선순위 기반 개선 전략 도출
+
+6. **A/B 테스트 설계**  
+   전략별 검증 실험 설계
+
+7. **KPI 설계**  
+   AOV, CVR, ITEM_DETAIL 진입률 등 성과 측정 기준 정의
 
 ---
 
 ## 핵심 인사이트
 
-- **AOV 정체는 고객/상품 구성의 문제가 아님** — 세그먼트 및 카테고리별 AOV 차이 미미
-- **HOMEPAGE → ITEM_DETAIL 미진입률 41%** — 상세페이지 진입 시 AOV 3%, CVR 2%p 개선 효과 확인
+- **AOV 정체는 고객/상품 구성의 문제가 아님** — 세그먼트 및 상품 카테고리별 AOV 차이 미미
 - **고율 할인(3%+) 구간에 저가 상품 집중** — 프로모션 구조가 AOV 상승을 제한할 가능성
+- **HOMEPAGE → ITEM_DETAIL 미진입률 41%** — ITEM_DETAIL 진입 세션에서 AOV는 3%, CVR은 2% 더 높게 나타나 상세페이지 진입 개선 여지를 확인
+![도달률 분석](images/funnel_reach.png)
+> HOMEPAGE → ITEM_DETAIL 미진입 41%
 
 ---
 
@@ -51,7 +65,7 @@
 | transactions | 거래 내역 | booking_id, customer_id, total_amount, promo_amount |
 | click_stream | 행동 로그 | session_id, event_name, event_time, traffic_source |
 
-> 출처 : [Kaggle E-commerce Transactional Dataset](https://www.kaggle.com/)  
+> 출처 : [Kaggle E-commerce App Transactional Dataset](https://www.kaggle.com/datasets/bytadit/transactional-ecommerce)  
 > 분석 기간 : 2019 ~ 2022 (4개년)
 
 ---
